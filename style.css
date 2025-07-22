@@ -1,0 +1,101 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto; /* السماح بالتمرير إذا كان المحتوى أكبر من الشاشة */
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* تنسيقات القسم الخاص بالزر */
+.external-site-link-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 600px; /* حجم معقول للقسم */
+    margin: 50px auto; /* توسيط القسم في الصفحة */
+    text-align: center;
+}
+
+.external-site-link-section h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 15px;
+}
+
+.external-site-link-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* تنسيقات الزر الجديد */
+.external-site-button {
+    display: inline-block; /* لجعله يتصرف كزر */
+    padding: 15px 30px;
+    background-color: #28a745; /* لون أخضر جذاب */
+    color: white;
+    text-decoration: none; /* إزالة الخط تحت اللينك */
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.external-site-button:hover {
+    background-color: #218838; /* لون أغمق عند المرور بالماوس */
+    transform: translateY(-2px); /* تأثير بسيط عند المرور */
+}
+
+.note {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* إزالة أي تنسيقات سابقة للـ modal أو الـ iframe إذا كانت موجودة */
+/* .modal, .modal-content, .close-button, .modal-body, .modal-body iframe, .fixed-external-site iframe {
+    display: none;
+    // أو قم بحذفها بالكامل إذا لم تعد تستخدمها
+} */
